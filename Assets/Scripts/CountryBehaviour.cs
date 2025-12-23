@@ -26,12 +26,23 @@ public class CountryBehavior : MonoBehaviour
         if (isSelected)
         {
             meshRenderer.material.color = selectedColor;
+            if (gameObject.name.Equals("ne_110m_admin_0_countries.215"))
+                SetCountryHeight(0.071f);
+            else if (gameObject.name.Equals("ne_110m_admin_0_countries.005"))
+                SetCountryHeight(0.087f);
+            else if (gameObject.name.Equals("ne_110m_admin_0_countries.258"))
+                SetCountryHeight(0.032f);
+            else if (gameObject.name.Equals("ne_110m_admin_0_countries.195"))
+                SetCountryHeight(0.05f);
+            else
+                SetCountryHeight(0.02f);
             // TODO: Call your UI Manager here to show info about this country
             Debug.Log($"Selected: {gameObject.name}");
         }
         else
         {
             meshRenderer.material.color = originalColor;
+            SetCountryHeight(0f);
         }
     }
 

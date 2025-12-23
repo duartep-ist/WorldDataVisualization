@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - Selectable
+  - Cube
+  - Cube2
+  - Cube3
+  - Cube4
   layers:
   - Default
   - TransparentFX
@@ -13,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Countries
-  - 
+  - Globe
   - 
   - 
   - 
