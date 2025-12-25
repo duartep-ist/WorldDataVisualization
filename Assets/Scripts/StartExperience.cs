@@ -4,14 +4,14 @@ using UnityEngine;
 public class StartExperience : MonoBehaviour
 {
     [Header("UI")]
-    [Tooltip("Canvas ou Panel das instruções")]
+    [Tooltip("Canvas ou Panel das instruï¿½ï¿½es")]
     public GameObject instructionsCanvas;
 
     [Header("XR")]
     [Tooltip("XR Origin (XR Rig)")]
     public XROrigin xrOrigin;
 
-    [Tooltip("Unidades para avançar para a frente")]
+    [Tooltip("Unidades para avanï¿½ar para a frente")]
     public float forwardOffset = 1.5f;
 
     public void StartExperienceButton()
@@ -23,16 +23,16 @@ public class StartExperience : MonoBehaviour
         if (instructionsCanvas != null)
             instructionsCanvas.SetActive(false);
 
-        // 2. Avançar o XR Rig
+        // 2. Avanï¿½ar o XR Rig
         if (xrOrigin == null)
         {
-            Debug.LogWarning("XR Origin não ligado");
+            Debug.LogWarning("XR Origin nï¿½o ligado");
             return;
         }
 
         Transform cameraTransform = xrOrigin.Camera.transform;
 
-        // Direção para a frente baseada na cabeça (ignora Y)
+        // Direï¿½ï¿½o para a frente baseada na cabeï¿½a (ignora Y)
         Vector3 forward = new Vector3(
             cameraTransform.forward.x,
             0f,

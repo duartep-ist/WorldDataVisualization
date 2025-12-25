@@ -1,57 +1,53 @@
+using System.Buffers;
 using UnityEngine;
 
-public class CountryBehavior : MonoBehaviour
+public class CountryBehaviour : MonoBehaviour
 {
     [Header("Settings")]
     public Color selectedColor = Color.cyan;
 
-    private bool isSelected = false;
     private Color originalColor;
     private Vector3 originalScale;
     private Renderer meshRenderer;
 
-    void Awake()
+    private Manager manager;
+
+    void Start()
     {
         // Cache references and initial state
         meshRenderer = GetComponent<Renderer>();
         originalColor = meshRenderer.material.color;
         originalScale = transform.localScale;
+        manager = FindObjectOfType<Manager>();
     }
 
-    // Call this to toggle selection state
-    public void ToggleSelection()
+    public int GetCountryID()
     {
-        isSelected = !isSelected;
-        
-        if (isSelected)
+        string countryName = gameObject.name;
+        if (countryName == "ne_110m_admin_0_countries")
         {
-            meshRenderer.material.color = selectedColor;
-            if (gameObject.name.Equals("ne_110m_admin_0_countries.215"))
-                SetCountryHeight(0.071f);
-            else if (gameObject.name.Equals("ne_110m_admin_0_countries.005"))
-                SetCountryHeight(0.087f);
-            else if (gameObject.name.Equals("ne_110m_admin_0_countries.258"))
-                SetCountryHeight(0.032f);
-            else if (gameObject.name.Equals("ne_110m_admin_0_countries.195"))
-                SetCountryHeight(0.05f);
-            else
-                SetCountryHeight(0.02f);
-            // TODO: Call your UI Manager here to show info about this country
-            Debug.Log($"Selected: {gameObject.name}");
+            return 0;
         }
-        else
+        if (int.TryParse(countryName.Split('.')[1], out int id))
         {
-            meshRenderer.material.color = originalColor;
-            SetCountryHeight(0f);
+            return id;
         }
+        throw new System.ArgumentException($"Invalid country name format: {countryName}");
     }
 
-    // Call this to change height. 
+    public void Select()
+    {
+        meshRenderer.material.color = selectedColor;
+    }
+    public void Deselect()
+    {
+        meshRenderer.material.color = originalColor;
+    }
+
     // heightFactor = 0.0f is surface level. 0.1f is 10% elevation.
-    public void SetCountryHeight(float heightFactor)
+    public void SetHeight(float heightFactor)
     {
         // Since pivot is at (0,0,0), uniform scaling moves the surface radially.
-        // Formula: NewScale = OriginalScale * (1 + height)
         transform.localScale = originalScale * (1.0f + heightFactor);
     }
 }

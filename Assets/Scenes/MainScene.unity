@@ -802,6 +802,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayers:
     m_Bits: 1
+    m_Mask: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -816,48 +817,67 @@ MonoBehaviour:
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_LastHoverExited:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_LastFocusExited:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_FocusEntered:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_FocusExited:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
+  <isHovered>k__BackingField: 0
+  <isSelected>k__BackingField: 0
+  <isFocused>k__BackingField: 0
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+  m_ClearedLargestInteractionStrength: 0
+  m_RegisteredInteractionManager: {fileID: 0}
 --- !u!1 &223620150
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +955,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223620150}
   m_CullTransparentMesh: 1
+--- !u!1 &235045330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235045331}
+  - component: {fileID: 235045332}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &235045331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235045330}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &235045332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235045330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd670023e0343aa37aa73ce2861aff3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &242680445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1109,12 +1173,12 @@ GameObject:
   m_Component:
   - component: {fileID: 259533507}
   m_Layer: 0
-  m_Name: Chart
+  m_Name: OLD Chart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &259533507
 Transform:
   m_ObjectHideFlags: 0
@@ -1900,15 +1964,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579664050}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00010970486, y: 0.000053947457, z: 0.0023639104, w: 0.99999726}
-  m_LocalPosition: {x: 0.029999888, y: 1.0800197, z: 1.3429996}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7515725709354696813}
   - {fileID: 179310536}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0.013, y: 0.006, z: 0.271}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &579664053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2565,6 +2629,68 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &925887105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055745891}
+    m_Modifications:
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619852259959799082, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_Name
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+--- !u!4 &925887106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+  m_PrefabInstance: {fileID: 925887105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &974743186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,6 +2813,38 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &987657404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987657405}
+  m_Layer: 0
+  m_Name: Chart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987657405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987657404}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 2.4, y: 0.5, z: -0.11}
+  m_LocalScale: {x: 0.42548, y: 0.42548, z: 0.42548}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1055745891}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1020070036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2981,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020070036}
   m_CullTransparentMesh: 1
+--- !u!1 &1055745890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055745891}
+  - component: {fileID: 1055745892}
+  m_Layer: 0
+  m_Name: Bars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1055745891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055745890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1928192899}
+  - {fileID: 1834242449}
+  - {fileID: 1882100519}
+  - {fileID: 925887106}
+  - {fileID: 1731133746}
+  m_Father: {fileID: 987657405}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1055745892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055745890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ad948fef61ef09b3de19717ad78a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1062176074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3438,7 +3645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4702b46d3344bcc4b8f5be7fd0c7d88b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4702b46d3344bcc4b8f5be7fd0c7d88b, type: 3}
       propertyPath: m_LocalScale.z
@@ -3486,7 +3693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4702b46d3344bcc4b8f5be7fd0c7d88b, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4702b46d3344bcc4b8f5be7fd0c7d88b, type: 3}
       propertyPath: m_Name
@@ -3746,6 +3953,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1731133745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055745891}
+    m_Modifications:
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619852259959799082, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_Name
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+--- !u!4 &1731133746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+  m_PrefabInstance: {fileID: 1731133745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1786509715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3827,6 +4096,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4702b46d3344bcc4b8f5be7fd0c7d88b, type: 3}
   m_PrefabInstance: {fileID: 1786509715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1834242448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055745891}
+    m_Modifications:
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619852259959799082, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_Name
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+--- !u!4 &1834242449 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+  m_PrefabInstance: {fileID: 1834242448}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1847575008
 PrefabInstance:
@@ -3921,6 +4252,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1882100518
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055745891}
+    m_Modifications:
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619852259959799082, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_Name
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+--- !u!4 &1882100519 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+  m_PrefabInstance: {fileID: 1882100518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1897234877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4002,6 +4395,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4702b46d3344bcc4b8f5be7fd0c7d88b, type: 3}
   m_PrefabInstance: {fileID: 1897234877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1928192898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055745891}
+    m_Modifications:
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619852259959799082, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+      propertyPath: m_Name
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+--- !u!4 &1928192899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238337816724798780, guid: 3451002650239d7aaa46a287badb6e9e, type: 3}
+  m_PrefabInstance: {fileID: 1928192898}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1963662427
 GameObject:
@@ -10011,7 +10466,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &2185100013422549516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11074,7 +11528,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &2530413213514083689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11397,7 +11850,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &2604118505293300443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12081,7 +12533,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &2787311790899834635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12317,7 +12768,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &2821839450053848569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12884,7 +13334,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3102612083389440257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13330,7 +13779,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3232210192935384641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13902,7 +14350,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3344095084357328744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14712,7 +15159,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3509020135638357217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15153,7 +15599,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3595745514403652379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15510,7 +15955,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3669347791784807701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16380,7 +16824,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3867762489105885564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16532,7 +16975,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3887345690278211829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16714,7 +17156,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3910078817600413755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16966,7 +17407,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &3952359770869281204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17728,7 +18168,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4183225177968163492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17955,7 +18394,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4243008886151535342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18419,7 +18857,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4361527640263097494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18699,7 +19136,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4443611355899127300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19035,7 +19471,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4570252128688405120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19308,7 +19743,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4604355855467432397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19461,7 +19895,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4605362097811562857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20112,7 +20545,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4750599577453791704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20334,7 +20766,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4788056642954922608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20597,7 +21028,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &4846116898336188011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20888,7 +21318,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5020491542759797565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21057,7 +21486,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5036685459806510252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21210,7 +21638,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5048789236434656173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21533,7 +21960,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5112677059135421715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21686,7 +22112,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5117789663574524927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21839,7 +22264,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5125853251153389138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21985,7 +22409,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5157800176104386746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22143,7 +22566,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5178145535360297919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22340,7 +22762,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5191433111774675642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22606,7 +23027,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5229338312438103506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22818,7 +23238,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5262660464370564109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22992,7 +23411,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5266981357715630984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23371,7 +23789,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5362993775144787278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23584,7 +24001,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5391818959252924481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23983,7 +24399,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5499900149020997535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24261,7 +24676,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5589664429646540189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24548,7 +24962,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5636510139562895305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24671,7 +25084,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5641166245579076886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24863,7 +25275,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5712958303331688201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25059,7 +25470,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5736177398264924013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25212,7 +25622,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5767737911535801191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25417,7 +25826,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5835876247202420270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25570,7 +25978,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5847860855594597922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25768,7 +26175,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5874923720383654286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26018,7 +26424,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5942925827120931760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26178,7 +26583,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &5955985490940685608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26354,7 +26758,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6018899350499857948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26477,7 +26880,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6023209237736137886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26600,7 +27002,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6033441327663126900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26774,7 +27175,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6074020145258040478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26897,7 +27297,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6077216804585008040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27235,7 +27634,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6137347778064901516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27409,7 +27807,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6145644744028896153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27532,7 +27929,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6148391625589395243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27781,7 +28177,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6198460536791167277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27926,7 +28321,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6217623562424661547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28166,7 +28560,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6234601639152536812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28348,7 +28741,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6247127060073879303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28530,7 +28922,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6272059713793194883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28646,7 +29037,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6275934318754343530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28777,7 +29167,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6285944651281362667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29002,7 +29391,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6328215430486666091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29287,7 +29675,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6410200232503857707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29410,7 +29797,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6414162767294906640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29637,7 +30023,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6430356448120398509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29835,7 +30220,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6442108747466866977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29973,7 +30357,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6447388730753913218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30160,7 +30543,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6479700916044614403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30314,7 +30696,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6505716662722239391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30430,7 +30811,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6510415154290667628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30582,7 +30962,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6540722396962116717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30756,7 +31135,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6556225139494889267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30894,7 +31272,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6604037747599413672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31047,7 +31424,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6614742667608459653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31170,7 +31546,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6615095258203628381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31523,7 +31898,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6662105677738611782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31646,7 +32020,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6662366508662832358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31775,7 +32148,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6666150458800310684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32032,7 +32404,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6690611279921259653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32230,7 +32601,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6792017712411141428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32346,7 +32716,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6799410553755717654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32475,7 +32844,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6807138569597977977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32591,7 +32959,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6822255494810109154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32777,7 +33144,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6854656313106166267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32999,7 +33365,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6923912329456546968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33233,7 +33598,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6951862666797905701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33394,7 +33758,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6956547674063912670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33538,7 +33901,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &6972027302917549736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33699,7 +34061,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7007896575024989227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33873,7 +34234,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7019445294414504771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34010,7 +34370,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7028509352992360727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34229,7 +34588,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7081370659109504807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34465,7 +34823,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7105267710805932369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34581,7 +34938,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7107039886749829834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34783,7 +35139,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7144695456153732947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34906,7 +35261,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7144880253902165518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35037,7 +35391,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7163383881634071007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35161,7 +35514,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7171816905273035635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35469,7 +35821,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7224030493427690775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35592,7 +35943,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7225975538808047330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35723,7 +36073,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7237404162529964233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35896,7 +36245,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7273339099110070996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36106,7 +36454,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7331632071511778419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36259,7 +36606,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7345631745796999631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36388,7 +36734,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7362623720667643991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36564,7 +36909,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7373863795585138898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36680,7 +37024,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7378166618765076712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36833,7 +37176,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7386466485284455547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36949,7 +37291,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7396541773264880238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37072,7 +37413,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7397183603243998103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37233,7 +37573,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7412734112365487529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37372,7 +37711,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7434894963258887547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37495,7 +37833,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7435197280544973958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37618,7 +37955,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7435775524256028197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37755,7 +38091,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7447609994299113744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37908,7 +38243,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7458046178304221104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38061,7 +38395,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7484242918977767742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38184,7 +38517,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7485231252397177969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38619,7 +38951,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7523782560517345260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38787,7 +39118,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7529533021409763132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38940,7 +39270,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7537977287764359902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39071,7 +39400,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7550088782730999785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39236,7 +39564,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7570104669229819182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39397,7 +39724,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7572502118295059535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39513,7 +39839,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7591312600433996641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39687,7 +40012,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7612288419802233544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39861,7 +40185,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7644496792706328448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39984,7 +40307,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7654707274630708145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40138,7 +40460,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7666922183544485272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40254,7 +40575,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7667572514376917922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40467,7 +40787,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7704113950181248845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40617,7 +40936,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7724285156086582171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40740,7 +41058,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7725940356506858481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40908,7 +41225,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7763438945951544461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41039,7 +41355,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7766257678264500672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41162,7 +41477,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7767247227653533550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41335,7 +41649,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7780020548467859923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41503,7 +41816,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7794495264577178976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41647,7 +41959,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7812765125602437531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41791,7 +42102,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7823468443317153879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41907,7 +42217,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7824258306862722939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42030,7 +42339,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7829633389079104772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42183,7 +42491,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7844677359423478674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42306,7 +42613,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7850995841965956000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42459,7 +42765,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7851331202374882555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42582,7 +42887,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7870209284591017191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42705,7 +43009,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7889339767382837652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42828,7 +43131,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7890712621475751922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42957,7 +43259,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7899876678604558519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43110,7 +43411,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7901337649173493896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43263,7 +43563,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7909758219495328481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43461,7 +43760,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7919188157334511126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43590,7 +43888,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7933343974883156435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43719,7 +44016,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &7955018111770097699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43858,7 +44154,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8037336587974380731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44011,7 +44306,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8040597429767393114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44163,7 +44457,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8055133175600728484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44286,7 +44579,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8060625581287576612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44447,7 +44739,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8068964031096619528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44576,7 +44867,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8072959417736011667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44720,7 +45010,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8088145988827681014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44843,7 +45132,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8108362389554464733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44996,7 +45284,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8112367925300713999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45119,7 +45406,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8123270061431241655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45272,7 +45558,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8125052707727762805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45433,7 +45718,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8133363900303175437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45583,7 +45867,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8152880728078792385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45736,7 +46019,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8163255055258395960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45976,7 +46258,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8178289739748619286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46099,7 +46380,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8185004689862104327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46273,7 +46553,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8199489790183287239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46410,7 +46689,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8241900930438505945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46547,7 +46825,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8259628939933230463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46700,7 +46977,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8266767984482006059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46816,7 +47092,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8270243756613094051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46932,7 +47207,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8283615671871504246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47069,7 +47343,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8325868013040462940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47198,7 +47471,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8327526771166596487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47321,7 +47593,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8335503236614926918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47489,7 +47760,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8366325091500200864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47618,7 +47888,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8366521232910109985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47785,7 +48054,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8401272725413085178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47938,7 +48206,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8406079487760987474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48091,7 +48358,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8414185293767186834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48244,7 +48510,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8415091229075478706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48442,7 +48707,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8443663282414273087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48558,7 +48822,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8444419461545949196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48681,7 +48944,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8446714277778659733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48879,7 +49141,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8465880106042184419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48995,7 +49256,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8479406717680763031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49111,7 +49371,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8479440592800025691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49264,7 +49523,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8482252863491558753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49393,7 +49651,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8518770501059481516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49524,7 +49781,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8529494121885658389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49677,7 +49933,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8530879160995874016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49800,7 +50055,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8532398846725163851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49995,7 +50249,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8575484418313291422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50118,7 +50371,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8585957619267353413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50234,7 +50486,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8589113284213616214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50387,7 +50638,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8591459188584988600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50516,7 +50766,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8601339915819718820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50684,7 +50933,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8619121748556411561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50813,7 +51061,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8619610679903242897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50987,7 +51234,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8636289152603669801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51116,7 +51362,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8637571062122004630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51245,7 +51490,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8643811431009894674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51398,7 +51642,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8647730733279647829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51527,7 +51770,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8655934234913678286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51650,7 +51892,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8659602213245613890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51787,7 +52028,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8662202418692314670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51916,7 +52156,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8667248043288076664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52069,7 +52308,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8668626591962773301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52185,7 +52423,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8674450018716980950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52314,7 +52551,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8689389963633174354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52443,7 +52679,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8714181356299248147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52596,7 +52831,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8715033767135694644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52770,7 +53004,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8734271682160275185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52923,7 +53156,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8734904664567851077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53076,7 +53308,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8735605673317047739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53199,7 +53430,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8744081428842677860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53328,7 +53558,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8744113602700858349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53457,7 +53686,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8753304592921756233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53580,7 +53808,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8773096425478390026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53696,7 +53923,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8775298053768221136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53812,7 +54038,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8784580300511137378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53941,7 +54166,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8792432919833961956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54064,7 +54288,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8828759137676324566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54217,7 +54440,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8837033753018380802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54346,7 +54568,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8839692143073439755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54469,7 +54690,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8848346568594950550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54598,7 +54818,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8854134800505571132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54751,7 +54970,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8859487786227898008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54880,7 +55098,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8860948853490519555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55033,7 +55250,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8878733959187850210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55162,7 +55378,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8890623202595166764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55278,7 +55493,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8895610857252294092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55431,7 +55645,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8902533785194644441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55547,7 +55760,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8906961457975584304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55678,7 +55890,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8918994152546438069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55801,7 +56012,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8919527730897174900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55924,7 +56134,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8926690834917263581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56040,7 +56249,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8938573830637139191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56169,7 +56377,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8943579476186366545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56322,7 +56529,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8944410513599877154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56445,7 +56651,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8955291657226542074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56561,7 +56766,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8956981816747365912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56677,7 +56881,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8958941055082188187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56793,7 +56996,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8966263729740036976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56916,7 +57118,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8975744283919563801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57114,7 +57315,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8988312971177799382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57264,7 +57464,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &8992925379873259068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57393,7 +57592,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9001135114962725447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57516,7 +57714,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9012190853978621566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57645,7 +57842,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9015294541193109594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57798,7 +57994,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9028309519392163666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57927,7 +58122,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9028517315624031010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58056,7 +58250,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9028792167625040503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58185,7 +58378,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9030634874316556738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58301,7 +58493,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9034598596817942679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58424,7 +58615,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9045363738422534315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58553,7 +58743,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9045579632157037370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58669,7 +58858,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9054682679875108671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58792,7 +58980,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9055389832508077888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58921,7 +59108,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9069720568078456860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59044,7 +59230,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9070369388541986575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59218,7 +59403,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9073808727069262032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59355,7 +59539,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9084840910240576320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59508,7 +59691,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9085914879698707381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59637,7 +59819,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9094382983887113576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59790,7 +59971,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9122032661994537316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59913,7 +60093,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9127289155868530015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60029,7 +60208,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9145672958148083537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60158,7 +60336,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9150797287840163727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60311,7 +60488,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9155944894919661992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60464,7 +60640,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9157413989340010909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60587,7 +60762,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9158444722102550214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60703,7 +60877,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9167731636982240072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60819,7 +60992,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9173334096943221098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60948,7 +61120,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9191292834359746793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61064,7 +61235,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9191886393727989782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61180,7 +61350,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9202839688537746429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61303,7 +61472,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9208134982709716027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61456,7 +61624,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9209243054257135181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61579,7 +61746,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  selectedCountries: 0
 --- !u!114 &9210818061598745824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61607,4 +61773,6 @@ SceneRoots:
   - {fileID: 579664052}
   - {fileID: 1963662429}
   - {fileID: 1724353670}
+  - {fileID: 235045331}
   - {fileID: 460522907}
+  - {fileID: 987657405}
