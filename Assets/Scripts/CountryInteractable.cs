@@ -13,9 +13,9 @@ public class CountryInteractable : XRBaseInteractable
         manager = FindObjectOfType<Manager>();
     }
 
-    protected override void OnSelectEntering(SelectEnterEventArgs args)
+    protected override void OnActivated(ActivateEventArgs args)
     {
-        base.OnSelectEntering(args);
+        base.OnActivated(args);
 
         Debug.Log($"Country clicked {gameObject.name}");
 
