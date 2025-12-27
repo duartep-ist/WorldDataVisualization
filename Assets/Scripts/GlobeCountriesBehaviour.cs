@@ -15,6 +15,12 @@ public class GlobeCountriesBehaviour : MonoBehaviour
         {
             countries[i] = transform.GetChild(i).gameObject;
         }
+
+        for (int i = 0; i < countries.Length; i++)
+        {
+            CountryBehaviour countryBehaviour = countries[i].GetComponent<CountryBehaviour>();
+            countryBehaviour.SetHeight(Random.Range(0.0f, 1.0f) < 0.5f ? 0.0f : 1.0f);
+        }
     }
 
     // Update is called once per frame

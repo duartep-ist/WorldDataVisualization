@@ -3,13 +3,14 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {
     ChartBehaviour chartBehaviour;
-
+    GlobeCountriesBehaviour globeCountriesBehaviour;
     CountryBehaviour selectedCountry = null;
     int selectedCountryId = -1;
 
     void Start()
     {
         chartBehaviour = FindObjectOfType<ChartBehaviour>();
+        globeCountriesBehaviour = FindObjectOfType<GlobeCountriesBehaviour>();
     }
 
     public void OnCountryClicked(GameObject countryObj)

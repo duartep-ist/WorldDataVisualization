@@ -7,7 +7,6 @@ public class CountryBehaviour : MonoBehaviour
     public Color selectedColor = Color.cyan;
 
     private Color originalColor;
-    private Vector3 originalScale;
     private Renderer meshRenderer;
 
     private Manager manager;
@@ -17,7 +16,6 @@ public class CountryBehaviour : MonoBehaviour
         // Cache references and initial state
         meshRenderer = GetComponent<Renderer>();
         originalColor = meshRenderer.material.color;
-        originalScale = transform.localScale;
         manager = FindObjectOfType<Manager>();
     }
 
@@ -44,10 +42,10 @@ public class CountryBehaviour : MonoBehaviour
         meshRenderer.material.color = originalColor;
     }
 
-    // heightFactor = 0.0f is surface level. 0.1f is 10% elevation.
+    // Height factor range: 0.0f to 1.0f
     public void SetHeight(float heightFactor)
     {
         // Since pivot is at (0,0,0), uniform scaling moves the surface radially.
-        transform.localScale = originalScale * (1.0f + heightFactor);
+        transform.localScale = Vector3.one * (1.075f + 0.25f * heightFactor);
     }
 }
