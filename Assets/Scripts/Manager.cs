@@ -11,6 +11,7 @@ public class Manager : MonoBehaviour
 
     public TextMeshProUGUI countryNameText;
     public TextMeshProUGUI chartMaxText;
+    public GameObject infoUI;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class Manager : MonoBehaviour
         globeCountriesBehaviour = FindObjectOfType<GlobeCountriesBehaviour>();
 
         globeCountriesBehaviour.ChangeHeights(DataProvider.GetGlobeData());
+        infoUI.SetActive(false);
     }
 
     public void OnCountryClicked(GameObject countryObj)
@@ -41,12 +43,19 @@ public class Manager : MonoBehaviour
             selectedCountry = newCountryBehaviour;
             selectedCountryCode = newCountryCode;
             selectedCountry.Select();
-            UpdateInfoPanel();
         }
+        UpdateInfoPanel();
     }
 
     private void UpdateInfoPanel()
     {
+        if (selectedCountry == null)
+        {
+            infoUI.SetActive(false);
+            return;
+        }
+        infoUI.SetActive(true);
+
         string countryName = DataProvider.GetCountryName(selectedCountryCode);
         countryNameText.text = countryName != null ? countryName : selectedCountryCode;
 
