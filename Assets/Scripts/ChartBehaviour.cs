@@ -15,12 +15,12 @@ public class ChartBehaviour : MonoBehaviour
     }
 
     // `data` is an array of float values between 0 and 1 representing the heights of the bars.
-    public void SetData(float[] data)
+    public void SetData(ChartEntry[] data)
     {
         int dataCount = data.Length;
         for (int i = 0; i < bars.Length; i++)
         {
-            float height = (i < dataCount) ? data[i] : 0f;
+            float height = (i < dataCount) ? data[i].value : 0f;
             Vector3 scale = bars[i].transform.localScale;
             scale.y = height;
             bars[i].transform.localScale = scale;

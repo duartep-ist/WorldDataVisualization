@@ -40,10 +40,10 @@ public class Manager : MonoBehaviour
 
     private void UpdateInfoPanel()
     {
-        float[] data = DataProvider.GetChartData(selectedCountryCode);
+        ChartEntry[] data = DataProvider.GetChartData(selectedCountryCode);
         for (int i = 0; i < data.Length; i++)
         {
-            data[i] /= 100f;
+            data[i].value /= 100f;
         }
         chartBehaviour.SetData(data);
     }
