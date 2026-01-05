@@ -10,7 +10,7 @@ public class CountryInteractable : XRBaseInteractable
 
     void Start()
     {
-        manager = FindObjectOfType<Manager>();
+        manager = FindFirstObjectByType<Manager>();
     }
 
     protected override void OnActivated(ActivateEventArgs args)

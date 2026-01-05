@@ -16,7 +16,7 @@ public class CountryBehaviour : MonoBehaviour
         // Cache references and initial state
         meshRenderer = GetComponent<Renderer>();
         originalColor = meshRenderer.material.color;
-        manager = FindObjectOfType<Manager>();
+        manager = FindFirstObjectByType<Manager>();
     }
 
     public string GetIsoA3Code()
