@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public class Manager : MonoBehaviour
 {
@@ -46,9 +47,19 @@ public class Manager : MonoBehaviour
 
     private void UpdateInfoPanel()
     {
-        countryNameText.text = DataProvider.GetCountryName(selectedCountryCode);
+        string countryName = DataProvider.GetCountryName(selectedCountryCode);
+        countryNameText.text = countryName != null ? countryName : selectedCountryCode;
 
         ChartEntry[] data = DataProvider.GetChartData(selectedCountryCode);
+        if (data == null || data.Length == 0)
+        {
+            List<ChartEntry> entries = new List<ChartEntry>();
+            for (int i = 0; i < 5; i++)
+            {
+                entries.Add(new ChartEntry { label = "No Data", value = 0f });
+            }
+            data = entries.ToArray();
+        }
 
         // Find the maximum value to normalize heights
         float maxValue = 0f;
