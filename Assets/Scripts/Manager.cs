@@ -9,6 +9,7 @@ public class Manager : MonoBehaviour
     string selectedCountryCode = "";
 
     public TextMeshProUGUI countryNameText;
+    public TextMeshProUGUI chartMaxText;
 
     void Start()
     {
@@ -48,10 +49,24 @@ public class Manager : MonoBehaviour
         countryNameText.text = DataProvider.GetCountryName(selectedCountryCode);
 
         ChartEntry[] data = DataProvider.GetChartData(selectedCountryCode);
+
+        // Find the maximum value to normalize heights
+        float maxValue = 0f;
         for (int i = 0; i < data.Length; i++)
         {
-            data[i].value /= 100f;
+            if (data[i].value > maxValue)
+            {
+                maxValue = data[i].value;
+            }
         }
-        chartBehaviour.SetData(data);
+
+        chartMaxText.text = maxValue.ToString("F0");
+
+        float [] normalizedData = new float[data.Length];
+        for (int i = 0; i < data.Length; i++)
+        {
+            normalizedData[i] = data[i].value / maxValue;
+        }
+        chartBehaviour.SetData(normalizedData);
     }
 }
