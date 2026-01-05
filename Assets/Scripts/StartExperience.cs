@@ -17,7 +17,7 @@ public class StartExperience : MonoBehaviour
     public void StartExperienceButton()
     {
         Debug.Log("START BUTTON FOI CARREGADO");
-        FindObjectOfType<Logger>().Log("start_button_press", "");
+        FindFirstObjectByType<Logger>().Log("start_button_press", "");
 
         // 1. Esconder o painel
         if (instructionsCanvas != null)
