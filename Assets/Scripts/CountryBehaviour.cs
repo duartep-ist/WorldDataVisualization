@@ -19,18 +19,9 @@ public class CountryBehaviour : MonoBehaviour
         manager = FindObjectOfType<Manager>();
     }
 
-    public int GetCountryID()
+    public string GetIsoA3Code()
     {
-        string countryName = gameObject.name;
-        if (countryName == "ne_110m_admin_0_countries")
-        {
-            return 0;
-        }
-        if (int.TryParse(countryName.Split('.')[1], out int id))
-        {
-            return id;
-        }
-        throw new System.ArgumentException($"Invalid country name format: {countryName}");
+        return gameObject.name;
     }
 
     public void Select()

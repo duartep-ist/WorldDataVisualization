@@ -5,7 +5,7 @@ public class Manager : MonoBehaviour
     ChartBehaviour chartBehaviour;
     GlobeCountriesBehaviour globeCountriesBehaviour;
     CountryBehaviour selectedCountry = null;
-    int selectedCountryId = -1;
+    string selectedCountryCode = "";
 
     void Start()
     {
@@ -22,17 +22,17 @@ public class Manager : MonoBehaviour
             selectedCountry.Deselect();
         }
         CountryBehaviour newCountryBehaviour = countryObj.GetComponent<CountryBehaviour>();
-        int newCountryId = newCountryBehaviour.GetCountryID();
-        if (newCountryId == selectedCountryId)
+        string newCountryCode = newCountryBehaviour.GetIsoA3Code();
+        if (newCountryCode == selectedCountryCode)
         {
             // Deselecting a country
             selectedCountry = null;
-            selectedCountryId = -1;
+            selectedCountryCode = "";
         } else
         {
             // Selecting a new country
             selectedCountry = newCountryBehaviour;
-            selectedCountryId = newCountryId;
+            selectedCountryCode = newCountryCode;
             selectedCountry.Select();
             UpdateInfoPanel();
         }
@@ -40,7 +40,7 @@ public class Manager : MonoBehaviour
 
     private void UpdateInfoPanel()
     {
-        float[] data = DataProvider.GetChartData(selectedCountryId);
+        float[] data = DataProvider.GetChartData(selectedCountryCode);
         for (int i = 0; i < data.Length; i++)
         {
             data[i] /= 100f;
