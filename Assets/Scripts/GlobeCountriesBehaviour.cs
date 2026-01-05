@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GlobeCountriesBehaviour : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class GlobeCountriesBehaviour : MonoBehaviour
     public Transform globeSurfaceTransform;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         // Assign all children to the countries array
         int childCount = transform.childCount;
@@ -19,7 +20,6 @@ public class GlobeCountriesBehaviour : MonoBehaviour
         for (int i = 0; i < countries.Length; i++)
         {
             CountryBehaviour countryBehaviour = countries[i].GetComponent<CountryBehaviour>();
-            countryBehaviour.SetHeight(Random.Range(0.0f, 1.0f) < 0.5f ? 0.0f : 1.0f);
         }
     }
 
@@ -27,5 +27,31 @@ public class GlobeCountriesBehaviour : MonoBehaviour
     void Update()
     {
         transform.rotation = globeSurfaceTransform.rotation;
+    }
+
+    public void ChangeHeights(Dictionary<string, float> data)
+    {
+        float maxValue = 0f;
+        foreach (float value in data.Values)
+        {
+            if (value > maxValue)
+            {
+                maxValue = value;
+            }
+        }
+
+        for (int i = 0; i < countries.Length; i++)
+        {
+            CountryBehaviour countryBehaviour = countries[i].GetComponent<CountryBehaviour>();
+            string countryCode = countryBehaviour.GetIsoA3Code();
+            if (data.ContainsKey(countryCode))
+            {
+                float height = data[countryCode] / maxValue;
+                countryBehaviour.SetHeight(height);
+            } else
+            {
+                countryBehaviour.SetHeight(0f);
+            }
+        }
     }
 }

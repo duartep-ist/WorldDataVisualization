@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Manager : MonoBehaviour
 {
@@ -7,10 +8,14 @@ public class Manager : MonoBehaviour
     CountryBehaviour selectedCountry = null;
     string selectedCountryCode = "";
 
+    public TextMeshProUGUI countryNameText;
+
     void Start()
     {
         chartBehaviour = FindObjectOfType<ChartBehaviour>();
         globeCountriesBehaviour = FindObjectOfType<GlobeCountriesBehaviour>();
+
+        globeCountriesBehaviour.ChangeHeights(DataProvider.GetGlobeData());
     }
 
     public void OnCountryClicked(GameObject countryObj)
@@ -40,6 +45,8 @@ public class Manager : MonoBehaviour
 
     private void UpdateInfoPanel()
     {
+        countryNameText.text = DataProvider.GetCountryName(selectedCountryCode);
+
         ChartEntry[] data = DataProvider.GetChartData(selectedCountryCode);
         for (int i = 0; i < data.Length; i++)
         {
